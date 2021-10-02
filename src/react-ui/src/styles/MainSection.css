@@ -1,0 +1,41 @@
+.MainSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: stretch;
+}
+
+.LeftBar .LeftBarContent,
+.BlogContent {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.LeftBar {
+  display: flex;
+  max-width: 160px;
+  flex-direction: column;
+  flex-grow: 0;
+}
+.LeftBarHeader {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.LeftBarContent {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+}
+.LeftBarIcon {
+    margin-right: 5px;
+}
+.BlogContent {
+  flex-grow: 1;
+}

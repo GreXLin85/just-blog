@@ -1,0 +1,64 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+    margin-bottom: 2rem;
+  }
+  .Logo,
+  .SearchBox,
+  .Menu {
+    display: inline-flex;
+  }
+  .SearchBox {
+    padding-left: 5rem;
+  }
+  .SearchBoxInput {
+    width: 100%;
+    margin-left: 0.4rem;
+    border: 0;
+    border-radius: 2rem;
+    background: #e8f0fa;
+    font-weight: 700;
+  }
+  .SearchBoxInput:focus {
+    outline: none;
+  }
+  .LogoText {
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .LogoIcon {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Menu {
+    font-weight: 700;
+  }
+  .MenuItem {
+    margin-left: 20px;
+  }
+  .MenuItemIcon {
+    margin-right: 5px;
+  }
+  
+  /*
+    For flexbox
+   */
+  
+  .SearchBox {
+    flex-grow: 1;
+  }
+  
+  .Logo .SearchBox .Menu {
+    display: block;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
